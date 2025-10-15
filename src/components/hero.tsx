@@ -1,24 +1,80 @@
+import { Mail, SendHorizonal } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+
+
 export function Hero() {
     return (
-        <div className="min-h-screen min-w-full overflow-hidden flex justify-start items-end p-9 bg-black">
-            <div className="w-[80%] h-[80vh] relative rounded-lg overflow-hidden mx-auto my-8">
-                <img
-                    src="https://res.cloudinary.com/dnfv0h10u/image/upload/v1760505437/mymind-XUlsF9LYeVk-unsplash_yqvnet.jpg"
-                    alt=""
-                    aria-hidden="true"
-                    className="absolute inset-0 h-full w-full object-cover object-center"
-                />
+        <div className="w-[100%] h-[100%] relative rounded-lg overflow-hidden mx-auto my-8">
+            <img
+                src="https://res.cloudinary.com/dnfv0h10u/image/upload/v1760505437/mymind-XUlsF9LYeVk-unsplash_yqvnet.jpg"
+                alt=""
+                aria-hidden="true"
+                className="absolute inset-0 h-full w-full object-cover object-center"
+            />
 
-                <div className="absolute inset-0 bg-gradient-to-t from-background/35 to-background/10" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/35 to-background/10" />
 
-                <div className="absolute bottom-0 left-0 p-6">
-                    <div className="max-w-xl rounded-lg border border-border bg-background/70 p-5 backdrop-blur-sm md:p-6">
-                        <h1 className="text-pretty text-3xl font-extralight leading-tight md:text-5xl">
-                            Thoughtful design, minimal by nature
-                        </h1>
-                        <p className="mt-3 text-sm font-light leading-relaxed text-muted-foreground md:text-base">
-                            Calm aesthetics meet practical craft. Join the waitlist to be first in line.
-                        </p>
+            <div className="absolute bottom-0 left-0 p-6 w-full">
+                <div className="rounded-lg p-5 backdrop-blur-sm md:p-6">
+                    <h1 className="text-pretty text-2xl leading-tight md:text-5xl">
+                        Carbon On Chain
+                    </h1>
+                    <p className="mt-1 text-4xl leading-relaxed text-gray-200">Decentralized Carbon Credits Management</p>
+                    <p className="mt-3 text-2xl  font-light leading-relaxed text-gray-300">
+                        Join the revolution in decentralized climate action. Trade tokenized carbon credits through<br /> Dutch auctions on Solana with full transparency and automated compliance.
+                    </p>
+                    <div className="flex gap-3 flex-col items-start mt-6">
+                        <div>
+                            <div className="*:data-[slot=avatar]:ring-background flex h-full items-center -space-x-2 *:data-[slot=avatar]:ring-2 *:data-[slot=avatar]:grayscale">
+                                <Avatar>
+                                    <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                                    <AvatarFallback>CN</AvatarFallback>
+                                </Avatar>
+                                <Avatar>
+                                    <AvatarImage
+                                        src="https://github.com/maxleiter.png"
+                                        alt="@maxleiter"
+                                    />
+                                    <AvatarFallback>LR</AvatarFallback>
+                                </Avatar>
+                                <Avatar>
+                                    <AvatarImage
+                                        src="https://github.com/evilrabbit.png"
+                                        alt="@evilrabbit"
+                                    />
+                                    <AvatarFallback>ER</AvatarFallback>
+                                </Avatar>
+                                <Avatar>
+                                    <AvatarImage
+                                        src="https://github.com/evilrabbit.png"
+                                        alt="@evilrabbit"
+                                    />
+                                    <AvatarFallback>ER</AvatarFallback>
+                                </Avatar>
+                            </div>
+                            <p className="mt-1">18 people have already joined the waitlist</p>
+                        </div>
+                        <form
+                            action=""
+                            className="w-full max-w-md">
+                            <div className="bg-zinc-600 p-1 py-1 has-[input:focus]:ring-muted relative grid grid-cols-[1fr_auto] items-center rounded-xl border shadow shadow-zinc-950/5 has-[input:focus]:ring-2">
+                                <Mail className="text-caption pointer-events-none absolute inset-y-0 left-5 my-auto size-5" />
+                                <input
+                                    placeholder="Join the waitlist"
+                                    className="h-14 rounded-lg w-full pl-16 focus:outline-none"
+                                    type="email"
+                                />
+
+                                <div className="mx-1 w-full">
+                                    <Button
+                                        className="rounded-lg min-h-full"
+                                        aria-label="submit">
+                                        <SendHorizonal className="" />
+                                    </Button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
