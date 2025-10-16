@@ -9,7 +9,7 @@ export default function Features() {
         <div className="text-left">
           <h2 className="text-balance text-2xl sm:text-3xl md:text-4xl lg:text-5xl">Why Choose Us</h2>
           <p className="mt-3 sm:mt-4 md:mt-5 text-base sm:text-lg md:text-2xl text-muted-foreground">
-            The world&apos;s first decentralized carbon compliance protocol powered by Solana
+            The world&apos;s first decentralized carbon compliance<br /> protocol powered by Solana
           </p>
         </div>
 
