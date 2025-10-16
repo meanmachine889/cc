@@ -4,7 +4,7 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/
 
 export default function FAQsThree() {
   return (
-    <div className="grid gap-4 sm:gap-6 md:gap-8 md:grid-cols-2 bg-zinc-200 px-4 sm:px-8 md:px-15 md:py-20 py-12 overflow-x-hidden w-full rounded-xl">
+    <div className="grid gap-4 sm:gap-6 md:gap-8 md:grid-cols-2 bg-zinc-200 px-6 md:px-15 md:py-20 py-12 overflow-x-hidden w-full rounded-xl">
       <div className="max-w-xl">
         <h1 className="text-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight">
           Frequently Asked
