@@ -21,8 +21,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Carbon on Chain",
   description:
-    "A blockchain-powered platform revolutionizing how carbon credits are created, traded, and tracked. Built on Solana with compliance and KYC for transparent, secure carbon credit tokenization.",
-  metadataBase: new URL("https://carbononchain.vercel.app"),
+    "A blockchain-powered platform revolutionizing how carbon credits are created, traded, and tracked.",
+  metadataBase: new URL("https://carbononchain.vercel.app/"),
   keywords: [
     "carbon credits",
     "blockchain carbon trading",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "Carbon on Chain",
     description:
       "Transforming how carbon credits are created, traded, and tracked — powered by Solana for transparency and efficiency.",
-    url: "https://carbononchain.vercel.app",
+    url: "https://carbononchain.vercel.app/",
     siteName: "Carbon on Chain",
     images: [
       {
