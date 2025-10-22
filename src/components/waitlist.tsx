@@ -9,10 +9,8 @@ import { toast } from "sonner";
 const Waitlist = () => {
     const [email, setEmail] = useState("");
     const [loading, setLoading] = useState(false);
-    // ✅ 1. State for the waitlist count, initialized to 0
     const [waitlistCount, setWaitlistCount] = useState(0);
 
-    // ✅ 2. Fetch the count when the component mounts
     useEffect(() => {
         const fetchWaitlistCount = async () => {
             try {
@@ -23,13 +21,11 @@ const Waitlist = () => {
                 }
             } catch (error) {
                 console.error("Failed to fetch waitlist count:", error);
-                // The count will remain 0 if the fetch fails
             }
         };
 
         fetchWaitlistCount();
-    }, []); // Empty array ensures this runs only once on mount
-
+    }, []);
     async function handleSubmit(e: React.FormEvent) {
         e.preventDefault();
         if (!email.trim()) {
@@ -55,7 +51,6 @@ const Waitlist = () => {
                     description: "Thanks for joining. Check your inbox for confirmation.",
                 });
                 setEmail("");
-                // ✅ 3. Increment count on successful submission for instant feedback
                 setWaitlistCount((prevCount) => prevCount + 1);
             } 
             else if (res.status === 409) {
@@ -68,6 +63,7 @@ const Waitlist = () => {
                     description: data.message || "Something went wrong.",
                 });
             }
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         } catch (error) {
             toast("Oops!", {
                 description: "Unable to join waitlist. Please try again later.",
@@ -107,7 +103,6 @@ const Waitlist = () => {
                                 <AvatarFallback>ER</AvatarFallback>
                             </Avatar>
                         </div>
-                        {/* ✅ 4. Display the dynamic count */}
                         <p className="mt-1 text-sm sm:text-base">
                             Join {waitlistCount} others on the waitlist!
                         </p>
