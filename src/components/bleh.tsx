@@ -27,8 +27,9 @@ export default function Feature() {
             <CardHeader className="pb-3">
               <CardHeading
                 icon={LineChart}
-                title="Bonding Curve Pricing"
-                description="Transparent, automated, fair credit distribution."
+                title="Dutch Auction Pricing"
+                description="Transparent, time-based pricing mechanism where credit cost decreases until purchased."
+
                 c="green"
               />
             </CardHeader>

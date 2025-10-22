@@ -41,7 +41,7 @@ export async function POST(req: Request) {
         });
 
         await transporter.sendMail({
-            from: `"Clarity Team" <${process.env.SMTP_USER}>`,
+            from: `"CarbonOnChain Team" <${process.env.SMTP_USER}>`,
             to: email,
             subject: "Thanks for subscribing to our waitlist!",
             html: `
@@ -49,7 +49,6 @@ export async function POST(req: Request) {
           <h2>🎉 Thanks for joining the waitlist!</h2>
           <p>Hey there,</p>
           <p>We're thrilled to have you on board. You'll be the first to know when we launch!</p>
-          <p>– Team Clarity 🚀</p>
         </div>
       `,
         });

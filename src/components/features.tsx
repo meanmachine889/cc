@@ -38,7 +38,7 @@ export default function Features() {
             </CardHeader>
             <CardContent>
               <p className="text-xs sm:text-sm md:text-base text-muted-foreground">
-                Our on-chain bonding curve ensures CCT prices reflect true market demand, with no auctions or delays.
+                Our on-chain Dutch auction model ensures fair and efficient CCT pricing, with rates decreasing until market demand meets supply.
               </p>
             </CardContent>
           </div>
