@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Carbon on Chain",
     description:
-      "Transforming how carbon credits are created, traded, and tracked — powered by Solana for transparency and efficiency.",
+      "Transforming how carbon credits are created, traded, and tracked.",
     url: "https://carbononchain.vercel.app/",
     siteName: "Carbon on Chain",
     images: [
