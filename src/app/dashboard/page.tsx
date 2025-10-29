@@ -127,7 +127,7 @@ export default function DashboardPage() {
         </div>
 
         {/* Quick Actions */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
           <Link href="/auctions">
             <Card className="bg-neutral-900 border-neutral-800 p-6 hover:border-neutral-700 transition-colors cursor-pointer">
               <h3 className="text-lg font-light mb-2">Purchase CCT</h3>
@@ -151,6 +151,15 @@ export default function DashboardPage() {
               <h3 className="text-lg font-light mb-2">Trade CCT</h3>
               <p className="text-neutral-400 text-sm font-light">
                 Buy or sell CCT tokens on the marketplace
+              </p>
+            </Card>
+          </Link>
+
+          <Link href="/history">
+            <Card className="bg-neutral-900 border-neutral-800 p-6 hover:border-neutral-700 transition-colors cursor-pointer">
+              <h3 className="text-lg font-light mb-2">View History</h3>
+              <p className="text-neutral-400 text-sm font-light">
+                See all your transactions and activity
               </p>
             </Card>
           </Link>

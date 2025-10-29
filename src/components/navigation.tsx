@@ -23,21 +23,33 @@ export function Navigation() {
           <div className="flex items-center gap-4">
             <Link
               href="/dashboard"
-              className="hidden md:inline-block px-4 py-2 text-sm font-light text-neutral-300 hover:text-white transition-colors"
+              className="hidden lg:inline-block px-4 py-2 text-sm font-light text-neutral-300 hover:text-white transition-colors"
             >
               Dashboard
             </Link>
             <Link
               href="/auctions"
-              className="hidden md:inline-block px-4 py-2 text-sm font-light text-neutral-300 hover:text-white transition-colors"
+              className="hidden lg:inline-block px-4 py-2 text-sm font-light text-neutral-300 hover:text-white transition-colors"
             >
               Auctions
             </Link>
             <Link
               href="/marketplace"
-              className="hidden md:inline-block px-4 py-2 text-sm font-light text-neutral-300 hover:text-white transition-colors"
+              className="hidden lg:inline-block px-4 py-2 text-sm font-light text-neutral-300 hover:text-white transition-colors"
             >
               Marketplace
+            </Link>
+            <Link
+              href="/report"
+              className="hidden lg:inline-block px-4 py-2 text-sm font-light text-neutral-300 hover:text-white transition-colors"
+            >
+              Report
+            </Link>
+            <Link
+              href="/history"
+              className="hidden lg:inline-block px-4 py-2 text-sm font-light text-neutral-300 hover:text-white transition-colors"
+            >
+              History
             </Link>
             <Link
               href="/onboard"
