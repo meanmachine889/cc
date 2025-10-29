@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Sora } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner";
+import { SolanaWalletProvider } from "@/providers/SolanaWalletProvider";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -76,8 +77,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${sora.variable} antialiased dark sora-font`}
       >
-        {children}
-        <Toaster />
+        <SolanaWalletProvider>
+          {children}
+          <Toaster />
+        </SolanaWalletProvider>
       </body>
     </html>
   );

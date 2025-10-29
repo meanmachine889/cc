@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+package-lock.json
+
+# Rust / Anchor
+target/
+**/*.rs.bk
+Cargo.lock
+.anchor/
+test-ledger/
+.DS_Store
+carbon-contracts/

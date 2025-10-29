@@ -4,10 +4,12 @@ import Features from "@/components/features";
 import FooterSection from "@/components/footer";
 import { Hero } from "@/components/hero";
 import Onboarding from "@/components/onboarding";
+import { Navigation } from "@/components/navigation";
 
 export default function Home() {
   return (
     <div className="min-w-screen min-h-screen flex flex-col items-center justify-center bg-black">
+      <Navigation />
       {/* Hero Section */}
       <section className="w-full flex h-screen items-center justify-center min-h-screen p-2 md:p-5">
         <Hero />
