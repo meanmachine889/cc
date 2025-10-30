@@ -11,7 +11,7 @@ export default function Home() {
     <div className="min-w-screen min-h-screen flex flex-col items-center justify-center bg-black">
       <Navigation />
       {/* Hero Section */}
-      <section className="w-full flex h-screen items-center justify-center min-h-screen p-2 md:p-5">
+      <section className="w-full flex h-screen items-center justify-center min-h-screen p-3">
         <Hero />
       </section>
 
